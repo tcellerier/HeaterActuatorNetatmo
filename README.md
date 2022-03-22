@@ -30,6 +30,7 @@ L’arduino n’a pas connaissance de l’écart entre la température cible et 
 * Vanne motorisée ESBE ARA639 158€
 * Vis boulon M6 x 4cm pour fixer le moteur à la vanne 6€
 * Chargeur 24V 26€
+* 2 sondes température DS18B20 5€ sur Aliexpress
 
 Budget total environ 300€
 
