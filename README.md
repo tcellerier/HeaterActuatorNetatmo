@@ -2,7 +2,7 @@
 
 ## Problématique
 * Le thermostat intelligent Netatmo permet de piloter une chaudière en envoyant des ordres simples avec un contact sec binaire : ON ou OFF.
-* Le choix retenu est d’utiliser le statut du contact sec pour augmenter ou fermer la vanne motorisée de la chaudière plutôt que de piloter la température de la chaudière, plus compliqué car il faut maintenir une température minimale de 30°. Plusieurs types de vannes motorisées existent : 3 points ou proportionnelle. Une Vanne motorisée “proportionnelle” est plus adaptée à ce projet car elle permet de positionner la vanne sur une position cible quelle que soit sa position initialle. Une vanne 3 points ne permet  uniquement de la tourner dans un sens ou dans l'autre sans connaissance de sa position absolue, ce qui rendrait le pilotage plus compliqué. 
+* Le choix retenu est d’utiliser le statut du contact sec pour augmenter ou fermer la vanne motorisée de la chaudière plutôt que de piloter la température de la chaudière, plus compliqué car il faut maintenir une température minimale de 30°. Plusieurs types de vannes motorisées existent : 3 points ou proportionnelle. Une Vanne motorisée “proportionnelle” est plus adaptée à ce projet car elle permet de positionner la vanne sur une position cible quelle que soit sa position initiale. Une vanne 3 points ne permet  uniquement de la tourner dans un sens ou dans l'autre sans connaissance de sa position absolue, ce qui rendrait le pilotage plus compliqué. 
 *  La vanne motorisée est pilotée avec un signal analogique 2-10V. 
 *  Le choix a été fait d’utiliser un Arduino Due avec son port DAC (Digital to Analog Converter) pour produire le signal de pilotage. Ce dernier ne pouvant générer un signal analogique que de 0.55V à 2.75V, il a fallu rajouter un module amplificateur de tension en sortie afin d’arriver à un signal 2V à 10V.
 
@@ -19,7 +19,7 @@ L’arduino n’a pas connaissance de l’écart entre la température cible et 
 
 ## Idées d’amélioration pour les prochaines versions
 * Affiner le paramétrage du code et régler la vitesse de d’ouverture/fermeture de la vanne dynamiquement
-* En plus du circuit chauffage, la chaudière chauffe également l’eau sanitaire et lorsque c’est le cas la température monte à 80°C et transmet donc cette chaleur au circuit chauffage en même temps. Idée de fermer la vanne lorsque ce cas se produit (nécessite un thermomètre à connecter à l’arduino) pour maintenir une température constante dans le circuit chauffage indépendamment du chauffe eau qui s'active ou non.
+* En plus du circuit chauffage, la chaudière chauffe également l’eau sanitaire et lorsque c’est le cas la température monte à 80°C et transmet donc cette chaleur au circuit chauffage en même temps. Idée de fermer la vanne lorsque ce cas se produit (nécessite un thermomètre à connecter à l’arduino) pour maintenir une température constante dans le circuit chauffage indépendamment du chauffe-eau qui s'active ou non.
 
 
 ## Equipement et budget
@@ -28,7 +28,7 @@ L’arduino n’a pas connaissance de l’écart entre la température cible et 
 * Chargeur micro usb 5V 10€
 * Amplificateur de tension (pour atteindre 2-10V) 12€
 * Vanne motorisée ESBE ARA639 158€
-* Vis boulon M6 x 4cm pour fixer l’actuator à la vanne 6€
+* Vis boulon M6 x 4cm pour fixer le moteur à la vanne 6€
 * Chargeur 24V 26€
 
 Budget total environ 300€
